@@ -86,7 +86,6 @@ require($corePath . '/config/base_pre.php');
 ## Load the base config file ##
 require($corePath . '/config/base.php');
 
-
 ## Load the database ##
 Loader::database();
 
@@ -107,6 +106,8 @@ Loader::library('block_view_template');
 Loader::library('block_controller');
 Loader::library('attribute/view');
 Loader::library('attribute/controller');
+
+require($corePath . '/startup/file_permission_config.php');
 
 ## Load required models ##
 Loader::model('area');
